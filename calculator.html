@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="generator" content="Bluefish 2.2.6" >
+<title>Calculator</title>
+<meta charset="utf-8">
+<script type="text/javascript">
+	function cube() {
+		var num = document.getElementById("n1");
+		num.value = Math.pow(num.value, 3);
+	}
+
+</script>
+</head>
+<body>
+<h1>Calculadora de Narcís Gelabertó Busto</h1>
+Number:
+<form><input type="text" id="n1"></form>
+<p><button onclick="cube()">x^3</button></p>
+</body>
+</html>
