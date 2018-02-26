@@ -9,6 +9,13 @@
 		var num = document.getElementById("n1");
 		num.value = Math.pow(num.value, 3);
 	}
+	function sinx() {
+		var num = document.getElementById("n1");
+		// Obtiene el seno de un ángulo expresado en grados
+		num.value = Math.sin(num.value*Math.PI/180);
+		// Redondea el resultado
+		num.value = Math.round(num.value*100)/100;
+	}
 
 </script>
 </head>
@@ -17,5 +24,6 @@
 Number:
 <form><input type="text" id="n1"></form>
 <p><button onclick="cube()">x^3</button></p>
+<p><button onclick="sinx()">sin(x)</button></p>
 </body>
 </html>
